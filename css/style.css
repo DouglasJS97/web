@@ -1,0 +1,270 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+body{
+    background: linear-gradient(50deg,#e615a7,#e68b15);
+}
+
+
+#cabecalho-main{
+    position: relative;
+    height: 12%;
+    background-color: rgba(2, 2, 2, 0.3);
+    padding: 8px;
+    z-index: 10;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    
+}
+
+.logo{
+    text-align: center;
+    color: #fff;
+}
+
+.menu-lista{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-lista li{
+    margin: 5px;
+}
+
+.menu-lista li a{
+    color: #fff;
+    text-transform: uppercase;
+    padding: 5px;
+    transition: all .1s;
+    font-size: 16px;
+}
+
+.menu-lista li a:hover{
+    font-size: 22px;
+    border-bottom: 1px solid #333;
+}
+
+#noticias{
+    padding: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.noticia-card{
+    width: 300px;
+    height: 320px;
+    background-color: #fff;
+    padding: 8px;
+    margin: 5px;
+    box-shadow: 1px 1px 15px #333;
+    text-align: left;
+}
+
+.noticia-card a{
+    color: #333;
+    line-height: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.noticia-card input{
+    color: #e6515c;
+    border: 1px solid #e6515c;
+    background-color: #fff;
+    padding: 6px;
+    border-radius: 5px;
+    margin: 8px 0;
+    cursor: pointer;
+    transition: all .5s;
+    text-transform: uppercase;
+}
+
+.noticia-card input:hover{
+   background-color:#e6515c;
+   box-shadow: 1px 1px 15px #e6515c;
+   color: #fff;
+}
+
+#curso{
+    background-color: #fff;
+    
+
+}
+
+.curso-info{
+    padding: 8px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.curso-info-img{
+    width: 300px;
+    height: 250px;
+    margin: 5px;
+    text-align: center;
+}
+
+.txt{
+    padding: 8px;
+    text-align: center;
+    color: #333;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #fff;
+}
+
+.area-texto{
+    width: 80%;
+    margin: 10px auto;
+}
+
+
+.txt p{
+    line-height: 2em;
+}
+
+.txt h1{
+    color: #333;
+}
+
+footer{
+    padding: 8px;
+    background: linear-gradient(50deg,#e615a7,#e68b15);
+    text-align: center;
+}
+
+.endereco{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #fff;
+}
+
+.endereco h1{
+    margin: 8px;
+}
+
+.endereco iframe{
+    border-radius: 8px;
+    box-shadow: 1px 1px 20px #333;
+}
+
+.voltar{
+    position: fixed;
+    margin: 8px;
+    right: 0;
+    bottom: 0;
+}
+
+.voltar button{
+    border: none;
+    outline: none;
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    background: linear-gradient(50deg,#e615a7,#e68b15);
+    transition: all .5s;
+}
+
+.voltar button:hover{
+    rotate: 360deg;
+}
+
+.voltar button a{
+    color: #fff;
+    padding: 15px;
+}
+
+.cursos-disponiveis{
+    padding: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.curso-op{
+    width: 300px;
+    height: 300px;
+    margin: 5px;
+    padding: 8px;
+    box-shadow: 1px 1px 15px #333;
+}
+
+.redes-sociais{
+    margin: 30px 0;
+}
+
+.redes-sociais h2{
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-bottom: 1px solid #fff;
+    margin: 5px;
+}
+
+.redes-sociais a{
+    margin: 8px;
+    padding: 8px;
+    color: #fff;
+}
+
+.redes-sociais i{
+    transition: all .5s;
+}
+
+.redes-sociais i:hover{
+    color: #333;
+}
+
+
+
+@media screen and (max-width:666px) {
+    #noticias{
+        justify-content: center;
+    }
+
+    .curso-info{
+        justify-content: center;
+    }
+
+    .txt p{
+        color: #333;
+    }
+
+    .cursos-disponiveis{
+        justify-content: center;
+    }
+
+    .curso-op{
+        margin: 5px 0;
+    }
+}
+
+@media screen and (min-width:1000px) {
+    #noticias{
+        position: relative;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .txt p{
+        color: #333;
+    }
+
+    .cursos-disponiveis{
+        width: 80%;
+        margin: 0 auto;
+        justify-content: flex-start;
+    }
+
+    .curso-op{
+        margin: 5px;
+    }
+}
