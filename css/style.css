@@ -231,7 +231,7 @@ footer{
     position: relative;
     top: 20px;
     transition: all .8s;
-    border-radius: 3pxs;
+    border-radius: 3px;
 }
 
 .botaoSaber:hover{
