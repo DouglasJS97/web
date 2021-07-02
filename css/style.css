@@ -172,6 +172,7 @@ footer{
     border-radius: 100%;
     background: linear-gradient(50deg,#e615a7,#e68b15);
     transition: all .5s;
+    box-shadow: 1px 1px 10px #333;
 }
 
 .voltar button:hover{
