@@ -23,7 +23,6 @@ body{
     align-items: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 18px;
-    
 }
 
 .logo{
@@ -45,7 +44,7 @@ body{
     color: #fff;
     text-transform: uppercase;
     padding: 5px;
-    transition: all .1s;
+    transition: all .3s;
     font-size: 16px;
 }
 
@@ -154,6 +153,7 @@ footer{
 .endereco iframe{
     border-radius: 8px;
     box-shadow: 1px 1px 20px #333;
+    width: 95%;
 }
 
 .voltar{
@@ -192,7 +192,7 @@ footer{
 
 .curso-op{
     width: 300px;
-    height: 300px;
+    height: 330px;
     margin: 5px;
     padding: 8px;
     box-shadow: 1px 1px 15px #333;
@@ -241,6 +241,10 @@ footer{
     border: none;
 }
 
+.fa-bars{
+    display: none;
+}
+
 
 
 @media screen and (max-width:666px) {
@@ -268,7 +272,7 @@ footer{
 @media screen and (min-width:1000px) {
     #noticias{
         position: relative;
-        width: 80%;
+        width: 65%;
         margin: 0 auto;
     }
 
@@ -277,7 +281,7 @@ footer{
     }
 
     .cursos-disponiveis{
-        width: 80%;
+        width: 65%;
         margin: 0 auto;
         justify-content: flex-start;
     }
@@ -289,5 +293,41 @@ footer{
     .voltar{
         right: 75px;
         bottom: 50px;
+    }
+}
+
+@media screen and (max-width:376px){
+    .logo{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    header{
+        width: 100%;
+    }
+
+    .menu-lista{
+        text-align: center;
+        transition: all .5s;
+    }
+
+    .fa-bars{
+        display: block;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width:375px){
+    .noticia-card{
+        width: 250px;
+    }
+
+    .noticia-imagem img{
+        width:100%;
+    } 
+
+    .menu-lista{
+        flex-direction: column;
     }
 }
